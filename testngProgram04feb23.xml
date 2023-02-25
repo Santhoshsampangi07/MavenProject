@@ -3,16 +3,16 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="day05.Program04"/>
+      <class name="day05.Program04">
       <methods>
 		  <include name="testcase03"/>  // Include :Which particular test case we need to run 
 		  <include name="testcase04"/>
 	  </methods>
 	  </class>
 	  <class name="day05.Program03"/>
-      <methods>
+      </methods>
 		  <exclude name="testcase02"/>  // Exclude : Which test case we should not run that should mention in exclude and except mentioned balance will run
-		  <excludee name="testcase01"/>
+		  <exclude name="testcase01"/>
 	  </methods>
 	  </class>
     </classes>
