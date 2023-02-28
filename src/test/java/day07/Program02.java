@@ -19,9 +19,8 @@ public class Program02 {
 			 property.setProperty("browser", "firefox");
 			 property.setProperty("screenshot", "./src/test/");
 			 property.store(ip,"done and dusted"); 
-			 
-			 
-		} catch (FileNotFoundException e) {
+			 System.out.println(property);
+		} catch (Exception e) {
 		
 			e.printStackTrace();
 		}

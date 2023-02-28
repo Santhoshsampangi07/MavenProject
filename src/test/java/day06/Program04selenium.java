@@ -12,15 +12,16 @@ public class Program04selenium {
 	@DataProvider(name="login")
 	public Object[][]testdata()
 	{
-		return new Object[][] {{"santhosh","pass123"},{"kumaravel","pass456"},{"frooti","pass789"}};
+		return new Object[][] {{"santhosh","pass123"}};
 		
 	}
 	
     @Test(dataProvider="login")
-	public void logIn(String username , String password)
+	public void logIn(String username , String password) throws InterruptedException
 	{
     	driver=new ChromeDriver();
     	driver.get("https://demo.guru99.com/V1/index.php");
+    	Thread.sleep(5000);
     	driver.findElement(By.name("username")).sendKeys(username); 
     	driver.findElement(By.name("password")).sendKeys(password); 
 		
