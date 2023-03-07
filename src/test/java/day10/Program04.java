@@ -13,7 +13,7 @@ public class Program04 {
 		WebDriver driver;
 		driver = new ChromeDriver();
 		driver.get("https://accounts.google.com/signup");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));  // implicit - To load web page
 		
 		}
 
